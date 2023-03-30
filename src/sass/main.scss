@@ -1,7 +1,20 @@
 @use './components/buttons';
 @use './components/links';
 @use './constants';
-@use './typography';
+
+:root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background-color: constants.$black-1;
+  color-scheme: light dark;
+  color: constants.$white-1;
+  font-family: constants.$font-family;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
 
 body {
   margin: 0;
