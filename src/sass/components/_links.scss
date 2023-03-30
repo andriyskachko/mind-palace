@@ -1,0 +1,16 @@
+@use '../constants';
+
+a {
+  font-weight: 500;
+  color: constants.$purple-2;
+  text-decoration: inherit;
+}
+a:hover {
+  color: constants.$purple-3;
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: constants.$purple-2;
+  }
+}

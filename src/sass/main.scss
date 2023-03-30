@@ -1,0 +1,20 @@
+@use './components/buttons';
+@use './components/links';
+@use './constants';
+@use './typography';
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: constants.$dark-grey;
+    background-color: constants.$white-1;
+  }
+}
