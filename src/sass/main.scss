@@ -1,4 +1,6 @@
+@use './base/reset';
 @use './components/buttons';
+@use './components/grid';
 @use './components/links';
 @use './constants';
 
@@ -16,18 +18,16 @@
   text-rendering: optimizeLegibility;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: constants.$dark-grey;
     background-color: constants.$white-1;
   }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
