@@ -1,5 +1,8 @@
-import { html } from './utilities/html';
+import { setupGrid } from './app/grid/grid';
+import { html } from './app/shared/utils/html';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = html`
-  <h1>Hello World!</h1>
+  <canvas id="canvas" class="canvas--paning"></canvas>
 `;
+
+const destroyGrid = setupGrid(document.querySelector('#canvas')!);

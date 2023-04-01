@@ -8,9 +8,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-color: constants.$black-1;
-  color-scheme: light dark;
-  color: constants.$white-1;
+  background-color: constants.$white-1;
+  color-scheme: dark light;
+  color: constants.$dark-grey;
   font-family: constants.$font-family;
   font-synthesis: none;
   font-weight: 400;
@@ -18,10 +18,10 @@
   text-rendering: optimizeLegibility;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: constants.$dark-grey;
-    background-color: constants.$white-1;
+    background-color: constants.$black-1;
+    color: constants.$white-1;
   }
 }
 
